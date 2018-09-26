@@ -1,0 +1,262 @@
+20:44:07 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+20:44:09 **** Incremental Build of configuration Debug for project PID_V0 ****
+make -r -j4 all 
+Building file: ../src/PID_V0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC17XX__ -D__REDLIB__ -I"C:\Users\Fabian\Documents\MCUXpressoIDE_10.2.0_759\workspace\lpc_chip_175x_6x\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/PID_V0.d" -MT"src/PID_V0.o" -MT"src/PID_V0.d" -o "src/PID_V0.o" "../src/PID_V0.c"
+../src/PID_V0.c: In function 'vTask_PID':
+../src/PID_V0.c:31:21: error: initializer element is not constant
+  static int input = muestra,
+                     ^~~~~~~
+../src/PID_V0.c:37:10: error: 'imput' undeclared (first use in this function); did you mean 'input'?
+  error = imput - set;
+          ^~~~~
+          input
+../src/PID_V0.c:37:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/PID_V0.c:43:16: error: 'lastinput' undeclared (first use in this function); did you mean 'last_input'?
+  d_term= input-lastinput;
+                ^~~~~~~~~
+                last_input
+../src/PID_V0.c:33:4: warning: variable 'output' set but not used [-Wunused-but-set-variable]
+    output, error;
+    ^~~~~~
+../src/PID_V0.c:32:4: warning: unused variable 'last_input' [-Wunused-variable]
+    last_input=0,
+    ^~~~~~~~~~
+At top level:
+../src/PID_V0.c:32:4: warning: 'last_input' defined but not used [-Wunused-variable]
+make: *** [src/PID_V0.o] Error 1
+20:45:00 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+20:45:01 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+20:45:02 **** Incremental Build of configuration Debug for project PID_V0 ****
+make -r -j4 all 
+Building file: ../src/PID_V0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC17XX__ -D__REDLIB__ -I"C:\Users\Fabian\Documents\MCUXpressoIDE_10.2.0_759\workspace\lpc_chip_175x_6x\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/PID_V0.d" -MT"src/PID_V0.o" -MT"src/PID_V0.d" -o "src/PID_V0.o" "../src/PID_V0.c"
+../src/PID_V0.c: In function 'vTask_PID':
+../src/PID_V0.c:31:21: error: initializer element is not constant
+  static int input = muestra,
+                     ^~~~~~~
+../src/PID_V0.c:43:16: error: 'lastinput' undeclared (first use in this function); did you mean 'last_input'?
+  d_term= input-lastinput;
+                ^~~~~~~~~
+                last_input
+../src/PID_V0.c:43:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/PID_V0.c:33:4: warning: variable 'output' set but not used [-Wunused-but-set-variable]
+    output, error;
+    ^~~~~~
+../src/PID_V0.c:32:4: warning: variable 'last_input' set but not used [-Wunused-but-set-variable]
+    last_input=0,
+    ^~~~~~~~~~
+make: *** [src/PID_V0.o] Error 1
+20:45:03 **** Incremental Build of configuration Debug for project PID_V0 ****
+make -r -j4 all 
+Building file: ../src/PID_V0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC17XX__ -D__REDLIB__ -I"C:\Users\Fabian\Documents\MCUXpressoIDE_10.2.0_759\workspace\lpc_chip_175x_6x\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/PID_V0.d" -MT"src/PID_V0.o" -MT"src/PID_V0.d" -o "src/PID_V0.o" "../src/PID_V0.c"
+../src/PID_V0.c: In function 'vTask_PID':
+../src/PID_V0.c:31:21: error: initializer element is not constant
+  static int input = muestra,
+                     ^~~~~~~
+../src/PID_V0.c:43:16: error: 'lastinput' undeclared (first use in this function); did you mean 'last_input'?
+  d_term= input-lastinput;
+                ^~~~~~~~~
+                last_input
+../src/PID_V0.c:43:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/PID_V0.c:33:4: warning: variable 'output' set but not used [-Wunused-but-set-variable]
+    output, error;
+    ^~~~~~
+../src/PID_V0.c:32:4: warning: variable 'last_input' set but not used [-Wunused-but-set-variable]
+    last_input=0,
+    ^~~~~~~~~~
+make: *** [src/PID_V0.o] Error 1
+20:46:00 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+20:46:01 **** Incremental Build of configuration Debug for project PID_V0 ****
+make -r -j4 all 
+Building file: ../src/PID_V0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC17XX__ -D__REDLIB__ -I"C:\Users\Fabian\Documents\MCUXpressoIDE_10.2.0_759\workspace\lpc_chip_175x_6x\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/PID_V0.d" -MT"src/PID_V0.o" -MT"src/PID_V0.d" -o "src/PID_V0.o" "../src/PID_V0.c"
+../src/PID_V0.c: In function 'vTask_PID':
+../src/PID_V0.c:32:4: error: 'last_input' undeclared (first use in this function); did you mean 'input'?
+    last_input=0,
+    ^~~~~~~~~~
+    input
+../src/PID_V0.c:32:4: note: each undeclared identifier is reported only once for each function it appears in
+../src/PID_V0.c:33:4: error: 'output' undeclared (first use in this function); did you mean 'input'?
+    output, error;
+    ^~~~~~
+    input
+../src/PID_V0.c:32:16: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+    last_input=0,
+                ^
+../src/PID_V0.c:33:12: error: 'error' undeclared (first use in this function)
+    output, error;
+            ^~~~~
+../src/PID_V0.c:33:10: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+    output, error;
+          ^
+make: *** [src/PID_V0.o] Error 1
+20:46:25 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+20:46:26 **** Incremental Build of configuration Debug for project PID_V0 ****
+make -r -j4 all 
+Building file: ../src/PID_V0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC17XX__ -D__REDLIB__ -I"C:\Users\Fabian\Documents\MCUXpressoIDE_10.2.0_759\workspace\lpc_chip_175x_6x\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/PID_V0.d" -MT"src/PID_V0.o" -MT"src/PID_V0.d" -o "src/PID_V0.o" "../src/PID_V0.c"
+../src/PID_V0.c: In function 'vTask_PID':
+../src/PID_V0.c:32:4: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'last_input'
+    last_input=0,
+    ^~~~~~~~~~
+../src/PID_V0.c:32:4: error: 'last_input' undeclared (first use in this function)
+../src/PID_V0.c:32:4: note: each undeclared identifier is reported only once for each function it appears in
+../src/PID_V0.c:33:4: error: 'output' undeclared (first use in this function)
+    output, error;
+    ^~~~~~
+../src/PID_V0.c:32:16: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+    last_input=0,
+                ^
+../src/PID_V0.c:33:12: error: 'error' undeclared (first use in this function)
+    output, error;
+            ^~~~~
+../src/PID_V0.c:33:10: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+    output, error;
+          ^
+../src/PID_V0.c:37:2: error: 'input' undeclared (first use in this function); did you mean 'int'?
+  input = muestra;
+  ^~~~~
+  int
+make: *** [src/PID_V0.o] Error 1
+20:48:47 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+20:48:47 **** Incremental Build of configuration Debug for project PID_V0 ****
+make -r -j4 all 
+Building file: ../src/PID_V0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC17XX__ -D__REDLIB__ -I"C:\Users\Fabian\Documents\MCUXpressoIDE_10.2.0_759\workspace\lpc_chip_175x_6x\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/PID_V0.d" -MT"src/PID_V0.o" -MT"src/PID_V0.d" -o "src/PID_V0.o" "../src/PID_V0.c"
+../src/PID_V0.c: In function 'vTask_PID':
+../src/PID_V0.c:32:4: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'last_input'
+    last_input=0,
+    ^~~~~~~~~~
+../src/PID_V0.c:32:4: error: 'last_input' undeclared (first use in this function)
+../src/PID_V0.c:32:4: note: each undeclared identifier is reported only once for each function it appears in
+../src/PID_V0.c:33:4: error: 'output' undeclared (first use in this function)
+    output, error;
+    ^~~~~~
+../src/PID_V0.c:32:16: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+    last_input=0,
+                ^
+../src/PID_V0.c:33:12: error: 'error' undeclared (first use in this function)
+    output, error;
+            ^~~~~
+../src/PID_V0.c:33:10: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+    output, error;
+          ^
+../src/PID_V0.c:37:2: error: 'input' undeclared (first use in this function); did you mean 'int'?
+  input = muestra;
+  ^~~~~
+  int
+make: *** [src/PID_V0.o] Error 1
+20:49:00 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+20:49:01 **** Incremental Build of configuration Debug for project PID_V0 ****
+make -r -j4 all 
+Building file: ../src/PID_V0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC17XX__ -D__REDLIB__ -I"C:\Users\Fabian\Documents\MCUXpressoIDE_10.2.0_759\workspace\lpc_chip_175x_6x\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/PID_V0.d" -MT"src/PID_V0.o" -MT"src/PID_V0.d" -o "src/PID_V0.o" "../src/PID_V0.c"
+../src/PID_V0.c: In function 'vTask_PID':
+../src/PID_V0.c:33:4: warning: variable 'output' set but not used [-Wunused-but-set-variable]
+    output, error;
+    ^~~~~~
+Finished building: ../src/PID_V0.c
+ 
+Building target: PID_V0.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Fabian\Documents\MCUXpressoIDE_10.2.0_759\workspace\lpc_chip_175x_6x\Debug" -Xlinker -Map="PID_V0.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "PID_V0_Debug.ld" -o "PID_V0.axf"  ./src/PID_V0.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_chip_175x_6x
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:        1860 B       512 KB      0.35%
+        RamLoc32:          52 B        32 KB      0.16%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: PID_V0.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PID_V0.axf"; # arm-none-eabi-objcopy -v -O binary "PID_V0.axf" "PID_V0.bin" ; # checksum -p LPC1769 -d "PID_V0.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1860	      0	     52	   1912	    778	PID_V0.axf
+ 
+21:15:10 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+21:15:11 **** Incremental Build of configuration Debug for project PID_V0 ****
+make -r -j4 all 
+Building file: ../src/PID_V0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC17XX__ -D__REDLIB__ -I"C:\Users\Fabian\Documents\MCUXpressoIDE_10.2.0_759\workspace\lpc_chip_175x_6x\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/PID_V0.d" -MT"src/PID_V0.o" -MT"src/PID_V0.d" -o "src/PID_V0.o" "../src/PID_V0.c"
+../src/PID_V0.c: In function 'vTask_PID':
+../src/PID_V0.c:49:2: error: expected ';' before 'd_term'
+  d_term= input-last_input;
+  ^~~~~~
+../src/PID_V0.c:57:2: error: expected ';' before 'last_input'
+  last_input = input;
+  ^~~~~~~~~~
+../src/PID_V0.c:35:4: warning: unused variable 'last_input' [-Wunused-variable]
+    last_input=0,
+    ^~~~~~~~~~
+At top level:
+../src/PID_V0.c:35:4: warning: 'last_input' defined but not used [-Wunused-variable]
+make: *** [src/PID_V0.o] Error 1
+21:15:28 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+21:15:28 **** Incremental Build of configuration Debug for project PID_V0 ****
+make -r -j4 all 
+Building file: ../src/PID_V0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC17XX__ -D__REDLIB__ -I"C:\Users\Fabian\Documents\MCUXpressoIDE_10.2.0_759\workspace\lpc_chip_175x_6x\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/PID_V0.d" -MT"src/PID_V0.o" -MT"src/PID_V0.d" -o "src/PID_V0.o" "../src/PID_V0.c"
+Finished building: ../src/PID_V0.c
+ 
+Building target: PID_V0.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Fabian\Documents\MCUXpressoIDE_10.2.0_759\workspace\lpc_chip_175x_6x\Debug" -Xlinker -Map="PID_V0.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "PID_V0_Debug.ld" -o "PID_V0.axf"  ./src/PID_V0.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_chip_175x_6x
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:        1928 B       512 KB      0.37%
+        RamLoc32:          52 B        32 KB      0.16%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: PID_V0.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PID_V0.axf"; # arm-none-eabi-objcopy -v -O binary "PID_V0.axf" "PID_V0.bin" ; # checksum -p LPC1769 -d "PID_V0.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1928	      0	     52	   1980	    7bc	PID_V0.axf
+ 
+22:39:12 **** Build of configuration Debug for project workspace-master ****
+make -r -j4 all 
+*** linking project i2c ***
+arm-none-eabi-gcc -nostdlib -fno-builtin -mcpu=cortex-m3 -mthumb -Xlinker -Map=out/lpc1769/firmware.map -Wl,--gc-sections -Tetc/ld/lpc1769_lib.ld -Tetc/ld/lpc1769_mem.ld -Tetc/ld/lpc1769.ld -o out/lpc1769/firmware.axf out/lpc1769/obj/main.o   -Lout/lpc1769 -lbase -lboard -lchip -Lmodules/lpc1769/chip/libs -lusbd_175x_6x_lib
+   text	   data	    bss	    dec	    hex	filename
+   4728	      0	      8	   4736	   1280	out/lpc1769/firmware.axf
+copy from `out/lpc1769/firmware.axf' [elf32-littlearm] to `out/lpc1769/firmware.bin' [binary]
+*** post-build ***
+11:43:46 **** Build of configuration Debug for project workspace-master ****
+make -r -j4 all 
+*** compiling C file projects/i2c/src/main.c ***
+*** linking project i2c ***
+arm-none-eabi-gcc -nostdlib -fno-builtin -mcpu=cortex-m3 -mthumb -Xlinker -Map=out/lpc1769/firmware.map -Wl,--gc-sections -Tetc/ld/lpc1769_lib.ld -Tetc/ld/lpc1769_mem.ld -Tetc/ld/lpc1769.ld -o out/lpc1769/firmware.axf out/lpc1769/obj/main.o   -Lout/lpc1769 -lbase -lboard -lchip -Lmodules/lpc1769/chip/libs -lusbd_175x_6x_lib
+out/lpc1769\libchip.a(clock_17xx_40xx.o): In function `Chip_Clock_GetMainOscRate':
+C:\Users\usuario\Documents\TDII_R4051_Grupo7\Proyecto\workspace-master/modules/lpc1769/chip/inc/clock_17xx_40xx.h:739: undefined reference to `OscRateIn'
+out/lpc1769\libchip.a(clock_17xx_40xx.o): In function `Chip_Clock_GetRTCOscRate':
+C:\Users\usuario\Documents\TDII_R4051_Grupo7\Proyecto\workspace-master/modules/lpc1769/chip/inc/clock_17xx_40xx.h:757: undefined reference to `RTCOscRateIn'
+collect2.exe: error: ld returned 1 exit status
+make: *** [i2c] Error 1

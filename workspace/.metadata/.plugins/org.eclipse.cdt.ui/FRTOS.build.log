@@ -1,0 +1,6 @@
+10:26:30 **** Incremental Build of configuration Debug for project FRTOS ****
+make -r -j4 all 
+make: Nothing to be done for `all'.
+
+10:26:30 Build Finished (took 125ms)
+

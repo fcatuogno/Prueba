@@ -1,0 +1,20 @@
+18:01:36 **** Build of configuration Debug for project Clase20180626 ****
+make -r -j4 all 
+Building target: Clase20180626.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Fabian\Documents\MCUXpressoIDE_10.2.0_759\workspace\lpc_board_nxp_lpcxpresso_1769\Debug" -L"C:\Users\Fabian\Documents\MCUXpressoIDE_10.2.0_759\workspace\lpc_chip_175x_6x\Debug" -Xlinker -Map="Clase20180626.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Clase20180626_Debug.ld" -o "Clase20180626.axf"  ./src/Clase20180626.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:        3708 B       512 KB      0.71%
+        RamLoc32:           8 B        32 KB      0.02%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: Clase20180626.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Clase20180626.axf"; # arm-none-eabi-objcopy -v -O binary "Clase20180626.axf" "Clase20180626.bin" ; # checksum -p LPC1769 -d "Clase20180626.bin";
+   text	   data	    bss	    dec	    hex	filename
+   3708	      0	      8	   3716	    e84	Clase20180626.axf
+ 
+
+18:01:37 Build Finished (took 961ms)
+

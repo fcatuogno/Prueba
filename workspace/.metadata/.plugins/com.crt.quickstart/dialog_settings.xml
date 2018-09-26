@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\Fabian\Google Drive\TDII Proyecto\Prueba Hardware\Proyecto_V0.zip"/>
+			<item value="C:\Users\Fabian\Google Drive\TDII Proyecto\Prueba Hardware\PWM_test_V0-1.zip"/>
+			<item value="C:\Users\Fabian\Google Drive\Materias\Cursando\03_Tecnicas Digitales II\RTOS_BlinkyFabi.zip"/>
+			<item value="C:\Users\Fabian\Google Drive\Materias\Cursando\03_Tecnicas Digitales II\clase26_06.zip"/>
+			<item value="C:\nxp\MCUXpressoIDE_10.2.0_759\ide\Examples\LPCOpen\lpcopen_2_10_lpcxpresso_nxp_lpcxpresso_1769.zip"/>
+			<item value="C:\Users\Fabian\Google Drive\Materias\Cursando\03_Tecnicas Digitales II\RTOS\Plantilla RTOS v9.zip"/>
+		</list>
+	</section>
+	<section name="com.crt.quickstart.views.wizards.examples.QSExampleSelectionPage">
+		<item value="C:\Users\Fabian\Google Drive\TDII Proyecto\Prueba Hardware" key="dirname"/>
+	</section>
+</section>

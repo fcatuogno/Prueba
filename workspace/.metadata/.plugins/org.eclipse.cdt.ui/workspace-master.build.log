@@ -1,0 +1,14 @@
+11:43:46 **** Build of configuration Debug for project workspace-master ****
+make -r -j4 all 
+*** compiling C file projects/i2c/src/main.c ***
+*** linking project i2c ***
+arm-none-eabi-gcc -nostdlib -fno-builtin -mcpu=cortex-m3 -mthumb -Xlinker -Map=out/lpc1769/firmware.map -Wl,--gc-sections -Tetc/ld/lpc1769_lib.ld -Tetc/ld/lpc1769_mem.ld -Tetc/ld/lpc1769.ld -o out/lpc1769/firmware.axf out/lpc1769/obj/main.o   -Lout/lpc1769 -lbase -lboard -lchip -Lmodules/lpc1769/chip/libs -lusbd_175x_6x_lib
+out/lpc1769\libchip.a(clock_17xx_40xx.o): In function `Chip_Clock_GetMainOscRate':
+C:\Users\usuario\Documents\TDII_R4051_Grupo7\Proyecto\workspace-master/modules/lpc1769/chip/inc/clock_17xx_40xx.h:739: undefined reference to `OscRateIn'
+out/lpc1769\libchip.a(clock_17xx_40xx.o): In function `Chip_Clock_GetRTCOscRate':
+C:\Users\usuario\Documents\TDII_R4051_Grupo7\Proyecto\workspace-master/modules/lpc1769/chip/inc/clock_17xx_40xx.h:757: undefined reference to `RTCOscRateIn'
+collect2.exe: error: ld returned 1 exit status
+make: *** [i2c] Error 1
+
+11:43:55 Build Finished (took 9s.127ms)
+
